@@ -12,7 +12,7 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name" >
-            <!-- Indicamos que la pantalla o activity es el principal -->
+            <!-- Indicamos que la pantalla o activity es el principal  -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
