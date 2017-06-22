@@ -3,5 +3,6 @@
 
     <string name="app_name">Mod 1 Class 1</string>
     <string name="saludo">Hello</string>
+    <string name="txt_registro">Push</string>
 
 </resources>

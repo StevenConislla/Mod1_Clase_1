@@ -1,5 +1,6 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -7,5 +8,32 @@
 
     <TextView android:text="@string/saludo" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/txt_registro"
+        android:textAllCaps="false"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+         />
 
-</RelativeLayout>
+
+</FrameLayout>
+    <!--
+    ConstraintLayout    Se vincula por los cuatro lados para saber en donde estará
+    LinearLayout        Se acomoda de forma horizontal o vertical
+    FrameLayout se acomoda segun gravedades
+    RelativeLayout  permite mover los elementos a nuestro gusto
+
+
+    -->
+
+    <!--
+       TextView        Label, textos
+       EditText        cajas de texto
+       Button          botones
+       Spinner         combo,comboBox,dropdown
+       CheckBox        selección multiple
+       RadioButton     selección unica
+       -->
