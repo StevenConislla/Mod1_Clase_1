@@ -2,8 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.plug.Clase_1"
     android:versionCode="1"
-    android:versionName="14.0">
+    android:versionName="1.0">
+    <!--
+    package -> identificador unico en la play store, solamente va a existir uno en la tienda.
+    versionCode -> lel numero de version que se maneja internamente, el codigo de version num
+    versionName ->El numero de version que se le da a conocer al usuario final.
+ -->
 
+    <!--
+    densidad    densidad por pixel          pixel
+    mdpi            1dp                     1px
+    hdpi            1dp                     1.5px
+    xhdpi           1dp                     2px
+    xxhdpi          1dp                     3px
+    xxxhdpi         1dp                     4px
+
+    label -> nombre que tendra la aplicacion
+    -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,8 +26,14 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".HomeActivity"
-            android:label="@string/app_name" >
-            <!-- Indicamos que la pantalla o activity es el principal  -->
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <!--
+            landscape ->horizontal
+            portait ->vertical
+            -->
+
+            <!-- Indicamos que la pantalla o activity es el principal-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

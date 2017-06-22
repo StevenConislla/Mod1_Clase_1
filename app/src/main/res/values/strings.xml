@@ -1,6 +1,9 @@
 <resources>
+    <!--          key         value-->
     <string name="app_name">Clase_1</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="saludo">Hola</string>
+    <string name="Despido">Adios</string>
 </resources>
