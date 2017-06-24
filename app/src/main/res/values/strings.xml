@@ -7,4 +7,12 @@
     <string name="saludo">Hola</string>
     <string name="Despido">Adios</string>
     <string name="txt_registro">Presionar</string>
+    <string name="txt_texto">ingrese_texto</string>
+    <string name="error">No se a escrito nada</string>
+    <string name="txt_pasar">Pasar</string>
+    <string name="procesar">Procesar</string>
+    <string name="mayor_18">Mayor 18</string>
+    <string name="menor_18">Menor 18</string>
+
+    <!-- string array-->
 </resources>
