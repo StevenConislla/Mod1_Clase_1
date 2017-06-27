@@ -1,55 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
 
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"/>
+        android:hint="Nombre"
+        android:inputType="text"/>
+
     <EditText
         android:id="@+id/etApellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Apellido"/>
+        android:layout_marginTop="10dp"
+        android:hint="Apellido"
+        android:inputType="text"
+        />
+
     <Spinner
         android:id="@+id/spGenero"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:entries="@array/generos">
 
     </Spinner>
+
+    <Spinner
+        android:id="@+id/spEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:prompt="@string/txt_edad">
+        <!---->
+
+
+    </Spinner>
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
+
         <RadioButton
-            android:layout_width="wrap_content"
+            android:id="@+id/rbMayor"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/mayor_18"/>
+            android:layout_weight="1"
+            android:text="@string/mayor_18" />
+
         <RadioButton
-            android:layout_width="wrap_content"
+            android:id="@+id/rbMenor"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/menor_18"/>
+            android:layout_weight="1"
+            android:text="@string/menor_18" />
 
     </RadioGroup>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
+
         <CheckBox
-            android:layout_width="wrap_content"
+            android:id="@+id/cbToma"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Toma"/>
+            android:layout_weight="1"
+            android:text="Toma" />
+
         <CheckBox
-            android:layout_width="wrap_content"
+            android:id="@+id/cbFuma"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Fuma"/>
+            android:layout_weight="1"
+            android:text="Fuma" />
     </LinearLayout>
+
     <Button
+        android:id="@+id/btnProcesar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:text="@string/procesar"
-        android:textAllCaps="false"
-        android:layout_gravity="center"/>
+        android:textAllCaps="false" />
 </LinearLayout>

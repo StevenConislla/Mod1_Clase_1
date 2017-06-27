@@ -13,6 +13,7 @@
     <string name="procesar">Procesar</string>
     <string name="mayor_18">Mayor 18</string>
     <string name="menor_18">Menor 18</string>
+    <string name="txt_edad">Edad</string>
 
     <!-- string array-->
 </resources>

@@ -66,17 +66,19 @@ public class HomeActivity extends Activity {
                     //CAMBIAMOS EL TEXTO A MOSTRAR
                 }
                 //Creamos el evento que ocurre al presionar pasar
-                pasar.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        //el intent me sirve para pasar de un layout a otro, o desde el mismo layout a otra aplicacion
-                        Intent intent=new Intent(HomeActivity.this,RegistroActivity.class);
-                        startActivity(intent);
-                    }
-                });
+
                 //Leng short dura 1 segundo, length long dura mas de un segundo.
                 //Integer.parseInt() lo que hace es convertir el texto escrito en nummero
                 //Double.parseDouble() convierte el texto en un decimal
+            }
+        });
+
+        pasar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //el intent me sirve para pasar de un layout a otro, o desde el mismo layout a otra aplicacion
+                Intent intent=new Intent(HomeActivity.this,RegistroActivity.class);
+                startActivity(intent);
             }
         });
     }
